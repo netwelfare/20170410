@@ -1,0 +1,12 @@
+1 查看磁盘的空间占用情况，df -h
+2 查看某个文件夹下的文件大小统计，du -h --max-depth=1 
+3 查找文件和删除文件
+	首先要查看日志：
+	find /home/log/kafka/logs/server.log* -type f -mtime +2 -exec ls -l {} \;
+	然后删除日志：
+	find /home/log/kafka/logs/server.log* -type f -mtime +2 -exec rm {} \;
+4 查找某个文件名的文件
+find /home -name "*.txt"
+5 查看链接文件
+ll
+6 清空文件
